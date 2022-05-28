@@ -25,6 +25,10 @@ function onFormSubmit(e) {
   e.preventDefault();
   e.currentTarget.reset();
   localStorage.removeItem(FEEDBACK_FORM_STATE);
+  console.log({
+    email: refs.labelEl.value,
+    message: refs.textAreaEl.value,
+  });
 }
 
 function populateMessageOutput() {
