@@ -23,12 +23,12 @@ function onFormInput(e) {
 
 function onFormSubmit(e) {
   e.preventDefault();
-  e.currentTarget.reset();
-  localStorage.removeItem(FEEDBACK_FORM_STATE);
-  console.log({
+    console.log({
     email: refs.labelEl.value,
     message: refs.textAreaEl.value,
   });
+  e.currentTarget.reset();
+  localStorage.removeItem(FEEDBACK_FORM_STATE);
 }
 
 function populateMessageOutput() {
